@@ -5,6 +5,8 @@ import pytest
 from werkzeug.serving import make_server
 
 from fixtures.api_client import APIClient
+from fixtures.device_context import device_client  # noqa: F401  引入即注册，pytest 从 conftest 收集 fixture
+from fixtures.device_context import device_context  # noqa: F401
 from server.app import app
 
 
