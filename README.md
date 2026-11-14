@@ -1,10 +1,10 @@
 # testdev-sprint-practice
 
-[TestDev-Sprint 教学站](https://github.com/MuyuQ/TestDev-Sprint)《API 自动化模板》一文的收官练习参考仓库。
+[TestDev-Sprint 教学站](https://muyuq.github.io/testdev-interview-site/)《API 自动化模板》一文的收官练习参考仓库。
 
 ## 这个仓库是什么
 
-教学站的 [practice-template/api-automation-template](https://github.com/MuyuQ/TestDev-Sprint/blob/main/src/content/docs/practice-template/api-automation-template.md) 给出了一套"拿去就能用"的接口自动化项目骨架。本仓库把文中"完整可运行示例（端到端跑通）"一节逐文件物化成真实仓库，并按教学站四个业务域项目文的收官练习，各给出一个改造示例分支：
+教学站的 [practice-template/api-automation-template](https://muyuq.github.io/testdev-interview-site/practice-template/api-automation-template/) 给出了一套"拿去就能用"的接口自动化项目骨架。本仓库把文中"完整可运行示例（端到端跑通）"一节逐文件物化成真实仓库，并按教学站四个业务域项目文的收官练习，各给出一个改造示例分支：
 
 - **main**：通用骨架。与文章的完整可运行示例一一对应，`pytest` 一条命令离线跑通。
 - **ecommerce**：电商同构改造。goods / cart / order 模块 + 商品、订单造数工厂 + 库存守恒断言（"少卖"问题的参考发现手段）。对应 `project/ecommerce-project.md` 的收官练习。
