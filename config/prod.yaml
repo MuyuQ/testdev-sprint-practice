@@ -1,0 +1,2 @@
+# config/prod.yaml —— 生产环境：仅演示占位，真实地址不要提交进仓库
+base_url: "https://api.example.com"

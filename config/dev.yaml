@@ -1,0 +1,2 @@
+# config/dev.yaml —— 开发环境：指向本地被测服务，pytest 离线可跑
+base_url: "http://127.0.0.1:5000"

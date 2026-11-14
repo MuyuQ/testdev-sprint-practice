@@ -1,0 +1,4 @@
+# config/config.yaml —— 主配置：所有环境共享的默认值
+base_url: "http://127.0.0.1:5000"
+timeout: 10
+retry_times: 3
