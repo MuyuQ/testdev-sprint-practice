@@ -24,3 +24,7 @@ class APIClient:
 
     def post(self, endpoint, **kwargs):
         return self.request("POST", endpoint, **kwargs)
+
+    def delete(self, endpoint, **kwargs):
+        """商品造数工厂的 teardown 走删除接口，客户端相应补上 DELETE"""
+        return self.request("DELETE", endpoint, **kwargs)

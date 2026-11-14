@@ -5,6 +5,8 @@ import pytest
 from werkzeug.serving import make_server
 
 from fixtures.api_client import APIClient
+from fixtures.goods_factory import goods_factory  # noqa: F401  引入即注册，pytest 从 conftest 收集 fixture
+from fixtures.order_factory import order_factory  # noqa: F401
 from server.app import app
 
 
