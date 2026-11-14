@@ -1,0 +1,45 @@
+# config/permission-matrix.yaml
+# 角色 × 资源 × 操作 的期望权限矩阵（admin 分支收官练习数据）。
+# 每个叶子节点 = 一个组合 = 一条参数化用例：allow 期望 200，deny 期望 403。
+# 这是"期望矩阵"，独立于 server 里的 ADMIN_POLICY（模拟真实后端配置）；
+# 两者不一致时，对应组合的用例立刻报错——权限配置一改、回归立刻红。
+roles:
+  ADMIN:
+    goods:
+      create: allow
+      update: allow
+      delete: allow
+    order:
+      cancel: allow
+      refund: allow
+    config:
+      read: allow
+      write: allow
+    user:
+      ban: allow
+  OPS:
+    goods:
+      create: allow
+      update: allow
+      delete: deny
+    order:
+      cancel: allow
+      refund: deny
+    config:
+      read: allow
+      write: deny
+    user:
+      ban: deny
+  CS:
+    goods:
+      create: deny
+      update: allow
+      delete: deny
+    order:
+      cancel: deny
+      refund: deny
+    config:
+      read: deny
+      write: deny
+    user:
+      ban: deny
